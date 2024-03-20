@@ -1,0 +1,694 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Open Sans", sans-serif;
+}
+#header{
+    z-index: 2;
+    height: 80px;
+    width: auto;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+/* bostrap header */
+#header.sticky{
+    height: 100px;
+    background: black;
+    opacity: 0.9;
+    padding: 10px 0px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* logo */
+.logo{
+    height: 80px;
+    width: 30%;
+    display: flex;
+}
+.logo img{
+    margin: auto;
+}
+/* navi */
+.navi{
+    height: 80px;
+    width: 40%;
+    display: flex;
+}
+.navi .navi-con{
+    margin: auto;
+}
+.navi li{ 
+    display: inline-block;
+}
+.navi li a{ 
+    /* font-family:Open Sans, sans-serif; */
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    line-height: 80px;
+    padding: 15px;
+}
+.navi li:hover a{
+    color: #FFED47;
+}
+/* funtion */
+.funtion{ 
+    color: white;
+    height: 80px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.fun-con{
+    margin: auto;
+    display: flex;
+}
+.fun-con .fun i{
+    padding: 15px;
+    font-size: 16px;
+}
+.fun-con .fun i{
+    color: white;
+}
+.fun-con .fun i:hover{
+    color: #FFED47;
+}
+/* background */
+#background{
+    background-image: url('/assets/img/back.png');
+    Height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* content background */
+#content{
+    width: 100%;
+    /* background-color: black; */
+    position: absolute;
+    top: 30%;
+}
+
+#content p{
+    text-align: center;
+    /* font-family:Open Sans, sans-serif; */
+    font-weight: bold;
+    color: #FFED47;
+    font-size: 21px;
+}
+#content h1{
+    text-align: center;
+    /* font-family:Open Sans, sans-serif; */
+    font-weight: bold;
+    color: white;
+    font-size: 72px;
+    margin: 10px 0px 10px 0px;
+}
+/*  */
+#fi-content{
+    height: 600px;
+    width: auto;
+    display: flex;
+}
+.fi-img{
+    height: 600px;
+    width: 45%;
+    margin-left: 10%;
+    padding-left: 7%;
+    margin-top: 150px;
+    display: flex;
+}
+.fi-img .fi-img1{
+    display: flex;
+    height: 450px;
+    width: 450px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.fi-img .fi-img1 img{
+    margin: auto;
+}
+.fi-text{
+    height: 700px;
+    width: 55%;
+}
+.fi-text h1{
+    margin-top: 150px;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+.fi-text h2{
+    margin-bottom: 20px;
+    font-size: 41px;
+}
+.fi-text p{
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+  input[type="number"] {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100px;
+    margin-bottom: 15px;
+  }
+
+  .box-but .box-cn{
+    margin: 10px;  
+    height: 50px;
+    width: 150px;
+    border: 1px #FFED47 solid;
+    background-color: #FFED47;
+    /* display: block;*/
+    border-radius: 25px;
+}
+
+.box-but .box-cn a { 
+    text-decoration: none;
+    /* font-family:Open Sans, sans-serif; */
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+.box-but .box-cn:hover {
+    /* color: #25775D; */
+    border: 1px black solid;
+    background-color: black;
+    display: inline-block;
+}
+/* secon-content */
+#secon-content{
+    height: 1075px;
+    width: auto;
+}
+#secon-con1{
+    width: auto;
+    height: 350px;
+    text-align: center;
+}
+#secon-con1 h1{
+    padding-top: 150px;
+    /* font-family:Open Sans, sans-serif; */
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0px;
+}
+#secon-con1 .secon-stroke{
+    display: flex;
+    width: auto;
+    height: 2px;
+}
+#secon-con1 .secon-stroke .stroke{ 
+    margin: auto;
+    height: 3px;
+    width: 50px;
+    background-color: #FFED47;
+}
+#secon-con1 p{
+    margin-top: 20px;
+    /* font-family:Open Sans, sans-serif; */
+    font-weight: thin;
+    font-size: 16px;
+}
+/* 2 */
+#secon-con2{
+    height: 725px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+#secon-con2 .secon-box{
+    height: 550px;
+    width: 350px;
+    /* background-color: aquamarine; */
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 5px #dcdcdc;
+}
+#secon-con2 .secon-box:hover{
+    box-shadow: 0px 0px 20px 5px white;
+}
+.secon-box{
+    text-align: center;
+}
+.secon-box img{
+    margin-top: 80px;
+}
+.secon-box p{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    /* font-family:Open Sans, sans-serif; */
+    font-weight: thin;
+    font-size: 16px;
+}
+.secon-box h1{
+    /* margin-top: 10px; */
+    margin-bottom: 0px;
+    /* font-family:Open Sans, sans-serif; */
+    font-weight: thin;
+    font-size: 28px;
+}
+
+.box-but .box-cn{
+    /* margin: 10px;  */
+    height: 50px;
+    width: 150px;
+    border: 1px #FFED47 solid;
+    background-color: #FFED47;
+    /* display: block;*/
+    border-radius: 25px;
+}
+
+.box-but .box-cn a { 
+    text-decoration: none;
+    /* font-family:Open Sans, sans-serif; */
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+.box-but .box-cn:hover {
+    /* color: #25775D; */
+    border: 1px black solid;
+    background-color: black;
+    display: inline-block;
+}
+/* foter  */
+#footer{
+    width: auto;
+    height: 500px;
+    background-color: #f5f5f5;
+    padding-bottom: 0px;
+}
+/* fo-content */
+.fo-content{
+    width: auto;
+    height: 120px;
+    text-align: center;
+}
+
+
+.fo-content h2{
+    margin-bottom: 10px;
+    padding-top: 40px;
+    color: black;
+    font-size: 24px;
+}
+
+
+.fo-content p {
+    color: black;
+    font-size: 16px;
+}
+/* fo-email */
+.fo-email{
+    padding-top: 20px;
+    width: auto;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.e-box{
+    width: 400px;
+    height: 40px;
+    border: 2px black solid;
+    color: black;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+
+.e-box .search-icon{
+    margin-left: 30px;
+    margin-right: 10px;
+    line-height: 40px;
+}
+
+
+.e-box .srch {
+    color: black;
+    border-top-style: hidden;
+    border-bottom-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    background-color: transparent;
+    border-color: black;
+    font-size: 16px;
+}
+
+
+.e-box .srch::placeholder {
+    color: black;
+    font-size: 12px;
+}
+
+
+.e-srch .bth{
+    margin-left: 20px;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    border: 2px #FFED47 solid;
+    background-color: #FFED47;
+    display: block;
+}
+
+
+.e-srch .bth{
+    font-size: 16px;
+    color: white;
+}
+
+
+.e-srch .bth:hover {
+    color: white;
+    background-color: black;
+    border: 2px black solid;
+    display: inline-block;
+}
+/* fo-final */
+.fo-final {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    height: 240px;
+    padding-bottom: 0px;
+    background-color: black;
+}
+.fi-logo {
+    padding-left: 70px;
+    padding-top:60px ;
+}
+.fi-content {
+    font-size: 16px;
+    color: white;
+    /* padding-top: 50px; */
+}
+.fi-content h3{
+    margin-top: 60px;
+    font-size: 18px;
+    color: #FFED47;
+    margin-bottom: 0px;
+}
+.fi-content ul li{
+    padding-top: 10px;
+    height: 21px;
+    margin-bottom: 0px;
+}
+.fi-icon {
+    font-size: 16px;
+    color: white;
+    padding-top: 60px;
+}
+.fi-icon h3{
+    font-size: 18px;
+    color: #FFED47;
+    margin-bottom: 0px;
+}
+.fi-icon .fi-icon2{
+    display: flex;
+    margin: 0px;
+    margin-right: 20px;
+}
+.fi-icon .fi-icon2 li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 36px;
+    margin-right: 20px;
+}
+
+#nav-place{
+    display: none;
+}
+
+@media only screen and (max-width: 600px)
+{
+    .logo{
+        width: 50%;
+    }
+    .logo img{
+        margin-top: 5px;
+        height: 30px;
+        margin-left: 10%;
+    }
+    .navi{
+        display: none;
+    }
+    .funtion{
+        display: none;
+    }
+    #header.sticky{
+        height: 60px;
+    }
+    #nav-place{
+        width: 50%;
+        padding-left: 50%;
+        margin-right: 10%;
+        display: block;
+    }
+    /* cần thơ  */
+    #nav-place{
+    position: relative;
+    /* position: webkit-sticky; */
+    top: 0;
+    /* background-color: #FFFDE3; */
+    /* border-top: 1px #25775D solid; */
+    /* border-bottom: 1px #25775D solid; */
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    }
+
+    #nav-place li a, .subnav li a{
+    text-decoration: none;
+    }
+
+    #nav-place li{
+    list-style-type: none;
+    }
+
+    #nav-place>li>a{
+    color: white;
+    line-height: 40px;
+    font-size: 20px;
+    /* line-height: 100px; */
+    padding: 0px 40px;
+    }
+
+    #nav-place>li:hover>a{
+    /* background-color: #FFED47; */
+    color: #FFED47;
+    display: inline-block;
+    }
+
+    #nav-place li:hover .subnav{
+    display: block;
+    }
+
+    .subnav{
+    display: none;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .subnav li{
+    height: 30px;
+    line-height: 30px;
+    }
+
+    .subnav li a{
+    color: black;
+    font-size: 12px;
+    display: block;
+    }
+
+    .subnav>li:hover>a{
+    width: 100%;
+    /* background-color: #25775D; */
+    /* border-top: 2px #FFFDE3 solid; */
+    color: #FFED47;
+    display: inline-block;
+    }
+    #background{
+        height: 500px;
+    }
+    #content p{
+        margin-top: 50px;
+        font-size: 24px;
+    }
+    #content h1{
+        font-size: 72px;
+    }
+/*  */
+    /*  */
+    .fo-email{
+        height: 100px;
+    }
+    .e-box{
+        width: 300px;
+    }  
+    .e-srch .bth{
+        width: 120px;
+    }
+    .e-srch .bth{
+        font-size: 16px;
+    }
+    .fo-final{
+        display: block;
+        text-align: center;
+        height: 400px;
+    }
+    .fi-logo{
+        padding: 0%;
+        padding-top: 50px;
+    }
+    .fi-logo img{
+        height: 40px;
+    }
+    .fi-content h3{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .fi-content ul {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .fi-content ul li{
+        font-size: 12px;
+        display: inline;
+    }
+    .fi-icon {
+        padding-top: 6px;
+    }
+    .fi-icon h3{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .fi-icon2{
+        padding-left: 37%;
+    }
+    .fi-icon2 li{
+        font-size: 20px;
+    }
+    .fi-icon .fi-icon2 li{
+        font-size: 20px;
+        margin: 10px;
+    }
+    .fi-icon img{
+        width: 100px;
+    }
+    .fo-email{
+        margin-top: 10px;
+    }
+    #secon-content{
+        height: 530px;
+        width: auto;
+    }
+    #secon-con1{
+        width: auto;
+        height: 200px;
+        text-align: center;
+    }
+    #secon-con1 h1{
+        padding-top: 50px;
+        font-size: 32px;
+        margin: 0px;
+    }
+    #secon-con1 .secon-stroke{
+        display: flex;
+        width: auto;
+        height: 2px;
+    }
+    #secon-con1 .secon-stroke .stroke{ 
+        margin: auto;
+        height: 2px;
+        width: 50px;
+    }
+    #secon-con1 p{
+        margin-top: 20px;
+        font-size: 12px;
+    }
+/*  */
+        /* 2 */
+    #secon-con2{
+        height: 725px;
+    }
+    #secon-con2 .secon-box{
+        height: 250px;
+        width: 150px;
+    }
+    .secon-box{
+        text-align: center;
+    }
+    .secon-box img{
+        margin-top: 15px;
+        height: 120px;
+    }
+    .secon-box p{
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-size: 12px;
+    }
+    .secon-box h1{
+        font-weight: thin;
+        font-size: 28px;
+    }
+
+    .box-but .box-cn{
+        height: 30px;
+        width: 120px;
+        border-radius: 15px;
+    }
+
+    .box-but .box-cn a { 
+        font-size: 12px;
+    }
+
+    .box-but .box-cn:hover {
+        border: 1px black solid;
+        background-color: black;
+    }
+    .fi-img .fi-img1{
+        height: 200px;
+    }
+    .fi-img img{
+        height: 150px;
+        width: 150px;
+    }
+    .fi-img{
+        margin-left: 5%;
+        padding-left: 0;
+        padding-right: 7%;
+        margin-top: 100px;
+    }
+    .fi-text{
+        margin-left: 0;
+        width: 250px;
+    }
+    .fi-text h1{
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+    .fi-text p{
+        font-size: 12px;
+    }
+    #fi-content{
+        height: 450px;
+    }
+}
+
+
